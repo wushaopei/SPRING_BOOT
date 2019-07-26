@@ -1,0 +1,15 @@
+
+#服务器端口号
+server:
+  port: 80
+
+#邮件配置
+email:
+  host: smtp.163.com
+  username: 15989746839@163.com
+  password: 15989746839wsp
+  senderName: 15989746839@163.com
+
+#发送提醒邮件的接收方
+sendToMail: 18620307785@foxmail.com
+sendToPeopleName: wen
