@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoiceOrderStore>
+    <InvoiceOrder id="1">
+        <invoiceOrder>001</invoiceOrder>
+        <companyName>冰与火之歌1</companyName>
+        <taxNumber>冰与火之歌1</taxNumber>
+        <accountBank>冰与火之歌1</accountBank>
+        <companyAddress>乔治马丁1</companyAddress>
+        <bankNumber>20141</bankNumber>
+        <companyTelephone>891</companyTelephone>
+        <accountName>891</accountName>
+    </InvoiceOrder>
+    <InvoiceOrder id="2">
+        <invoiceOrder>002</invoiceOrder>
+        <companyName>冰与火之歌2</companyName>
+        <taxNumber>冰与火之歌2</taxNumber>
+        <accountBank>冰与火之歌2</accountBank>
+        <companyAddress>乔治马丁2</companyAddress>
+        <bankNumber>20142</bankNumber>
+        <companyTelephone>892</companyTelephone>
+        <accountName>892</accountName>
+    </InvoiceOrder>
+    <InvoiceOrder id="3">
+        <invoiceOrder>003</invoiceOrder>
+        <companyName>冰与火之歌3</companyName>
+        <taxNumber>冰与火之歌3</taxNumber>
+        <accountBank>冰与火之歌3</accountBank>
+        <companyAddress>乔治马丁3</companyAddress>
+        <bankNumber>20143</bankNumber>
+        <companyTelephone>893</companyTelephone>
+        <accountName>893</accountName>
+    </InvoiceOrder>
+</invoiceOrderStore>
