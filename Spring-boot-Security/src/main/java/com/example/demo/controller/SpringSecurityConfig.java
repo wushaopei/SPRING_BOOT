@@ -39,7 +39,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         /*
         *  目前SpringSecurity 可以支持指定多個人的登陸
         * */
-        auth.userDetailsService(myUserService);
+        auth.userDetailsService(myUserService).passwordEncoder(new MyPasswordEncoder());
+
 
     }
 

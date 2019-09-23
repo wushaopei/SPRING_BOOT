@@ -1,5 +1,5 @@
 
-package com.cmit.invoicechk.util;
+package com.example.demo.util;
 
 import java.security.MessageDigest;
 
@@ -26,18 +26,25 @@ public class MD5Util {
 		return hexDigits[d1] + hexDigits[d2];
 	}
 
-	public static String MD5Encode(String str) {
+	public static String MD5Encode(String str,Object encoder) {
 		String rsStr = null;
 		try {
-			rsStr = new String(str);
+			rsStr = new String(str+encoder);
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			rsStr = byteArrayToHexString(md.digest(rsStr.getBytes()));
 		} catch (Exception e) {
 		}
 		return rsStr;
 	}
-    
-    protected static String toHexString(byte[] b){
+
+	public static  boolean isPasswordValid(String encPass, String rawPass, Object salt) {
+		String pass1 = "" + encPass;
+		String pass2 = MD5Encode(rawPass, salt);
+
+		return pass1.equals(pass2);
+	}
+
+	protected static String toHexString(byte[] b){
         StringBuilder sb = new StringBuilder(b.length*2);
         for(int i=0;i<b.length;i++){
             sb.append(hexChar[(b[i] & 0xf0) >>> 4]);
