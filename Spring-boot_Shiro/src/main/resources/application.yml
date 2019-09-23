@@ -7,6 +7,6 @@ spring:
     username: root
     password: root
     driver-class-name:  com.mysql.cj.jdbc.Driver
-#mybatis:
-#  mapper-locations: classpath*:/mybatis/mappers/*Mapper.xml
-#  type-aliases-package: com.webcode.springboot.entities
+
+mybatis:
+  mapperLocations: classpath*:com/example/demo/mapper/**/*Mapper.xml
