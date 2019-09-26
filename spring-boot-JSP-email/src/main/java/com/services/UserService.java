@@ -1,10 +1,17 @@
 package com.services;
 
+import com.entities.User;
+
 import java.util.List;
 
 
-//public interface EmpService {
+public interface UserService {
 	
-//	List<Emp> getAll();
+	List<User> getAll();
 
-//}
+    Integer addUser(User user);
+
+    User findByCode(String code);
+
+    void updateUser(User user);
+}
