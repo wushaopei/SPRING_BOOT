@@ -1,5 +1,7 @@
 package com.example.demo.advice;
 
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
 /**
  * @ClassName JsonpAdvice
  * @Description TODO
@@ -7,5 +9,10 @@ package com.example.demo.advice;
  * @Date 2019/9/7 16:49
  * @Version 1.0
  */
-public class JsonpAdvice {
-}
+//@ControllerAdvice
+//public class JsonpAdvice extends AbstractJsonpResponseBodyAdvice{
+//
+//    public JsonpAdvice(){
+//        super("callback");
+//    }
+//}
